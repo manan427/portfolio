@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-neutral-800 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-neutral-800 mb-6;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-neutral-600 mb-12 max-w-2xl mx-auto;
+  }
+  
+  .btn {
+    @apply inline-block px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-50;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-card overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+
+  .nav-link {
+    @apply text-neutral-600 hover:text-primary-500 transition-colors duration-300;
+  }
+  
+  .nav-link.active {
+    @apply text-primary-500 font-medium;
+  }
+}
