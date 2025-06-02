@@ -29,10 +29,10 @@ export const skills = [
   {
     category: "Tools & Others",
     items: [
-      { name: "Git", level: 88, icon: "git" },
+      { name: "Git", level: 80, icon: "git" },
       { name: "Supabase", level: 80, icon: "supabase" },
-      { name: "Flutterflow", level: 75, icon: "flutterflow" },
-      { name: "Bubble", level: 70, icon: "bubble" },
+      { name: "Flutterflow", level: 85, icon: "flutterflow" },
+      { name: "Bubble", level: 90, icon: "bubble" },
     ]
   }
 ];
@@ -40,20 +40,19 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "E-commerce Dashboard",
-    description: "A comprehensive admin dashboard for e-commerce sites with sales analytics, inventory management, and order tracking capabilities.",
+    title: "Ticketing App",
+    description: "Implemented a ticketing system where user queries sent via email  (e.g., issues like ”Outlook not working”)are e automatically stored in an MSSQL database The data is retrieved in a Bubble app via API where enginners manage tickets by updating statuses and estimated resolution times The system sends automated email updates to users,notifying them when their tickets are picked up and resolved, with real-time updates reflected in both the app and the database ",
     image: "https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    techStack: ["React", "Redux", "Tailwind CSS", "Chart.js"],
-    liveUrl: "https://example.com",
-    codeUrl: "https://github.com",
+    techStack: ["Bubble", "ApiConnector", "MsSql"],
+    liveUrl: "https://ticket-58215.bubbleapps.io/version-test?debug_mode=true",
     featured: true
   },
   {
     id: 2,
-    title: "Weather App",
-    description: "A sleek weather application that provides real-time weather data, forecasts, and beautiful visualizations based on location.",
+    title: "Chatbot ",
+    description: "Developed a chatbot using Gemini API, capable of handling smooth question-and-answer interactions.",
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    techStack: ["React", "OpenWeather API", "CSS Modules", "Axios"],
+    techStack: ["Flutterflow", "Dart", "Gemini"],
     liveUrl: "https://example.com",
     codeUrl: "https://github.com",
     featured: true
@@ -61,21 +60,11 @@ export const projects = [
   {
     id: 3,
     title: "Task Management System",
-    description: "A collaborative project management tool with task tracking, deadlines, and team communication features.",
+    description: "Developed a task management system enabling users to create and assign tasks to themselves or others, with options for daily, weekly, or monthly recurrence. Tasks include end dates, due dates, and automated email notifications for creation and approaching deadlines.",
     image: "https://images.pexels.com/photos/7234248/pexels-photo-7234248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     techStack: ["Flutterflow", "Supabase", "Dart"],
     liveUrl: "https://galaxy247-flutterflow.flutterflow.app/login",
     featured: true
-  },
-  {
-    id: 4,
-    title: "Fitness Tracker",
-    description: "An application that helps users track their workouts, set goals, and visualize their fitness progress over time.",
-    image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    techStack: ["React", "Firebase", "Recharts", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    codeUrl: "https://github.com",
-    featured: false
   }
 ];
 

@@ -1,5 +1,5 @@
-import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { personalInfo } from '../data';
 
 const About = () => {
@@ -46,7 +46,7 @@ const About = () => {
               
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg z-20">
                 <p className="text-sm font-medium">
-                  <span className="text-primary-500 text-3xl font-bold">5+</span><br/>
+                  <span className="text-primary-500 text-3xl font-bold">2+</span><br/>
                   Years of Experience
                 </p>
               </div>
