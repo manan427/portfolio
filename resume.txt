@@ -1,0 +1,151 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\large
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small #3} & \textit{\small #4}
+\end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2
+\end{tabular*}\vspace{-6pt}
+}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+\textbf{\Large Manan Modi} \\
+\small Mumbai, India \quad
+\faPhone\ +91-8850276939 \quad
+\faEnvelope\ modimanan00@gmail.com \\
+\faLinkedin\ LinkedIn \quad
+\faGithub\ GitHub
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\textbf{AI and Data Engineer} experienced in building AI-powered systems, scalable backend services, data pipelines, and \textbf{automation workflows}. Skilled in Python, FastAPI, SQL, LLM integration, and real-time data processing.
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+\small{
+\item \textbf{Languages \& Backend:} Python, FastAPI, REST APIs, JavaScript
+\item \textbf{Frontend:} React (.JSX), Angular, Tailwind CSS, Bootstrap
+\item \textbf{AI/ML:} LLM Integration, Prompt Engineering, Agentic AI, TPOT, Gemini, OpenAI-compatible Models
+\item \textbf{Data:} Pandas, NumPy, Data Processing, ETL, Data Pipelines,
+Data Analysis, Data Validation, Visualization
+}
+\item \textbf{Databases:} PostgreSQL, MSSQL, SQL Optimization, Query Rewriting, Indexing, Firebase, Supabase
+\item \textbf{Infra \& Automation:} Zabbix, Ansible, Python Cron Jobs, SSE Streaming
+\item \textbf{Tools \& Platforms:} GitHub, BrowserStack, OpenProject, Sublime Text
+}
+
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{AI Engineer}{Apr 2023 -- Present}
+{Galaxy Office Automation}{Mumbai}
+\begin{itemize}
+\resumeItem{Designed and deployed \textbf{AI-powered systems} and full-stack applications, owning end-to-end development from \textbf{LLM integration and backend APIs} (FastAPI) to \textbf{React frontends}}
+\resumeItem{Built \textbf{agentic AI systems}, automation pipelines, and real-time observability tools using LLMs, \textbf{Ansible integrations}, and scalable architectures}
+\end{itemize}
+
+\resumeSubheading
+{Software Developer Intern}{Sept 2021 -- June 2022}
+{21n78e Creative Labs}{Mumbai}
+\begin{itemize}
+\resumeItem{Built and re-architected applications using \textbf{Angular, Bootstrap}, and API integrations}
+\resumeItem{Developed platforms using \textbf{WordPress Elementor Pro}; increased traffic by 25\%}
+\resumeItem{Integrated \textbf{WhatsApp Bot} for automated communication workflows}
+\end{itemize}
+
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\resumeProjectHeading{\textbf{Galaxy Protaigo} $|$ \emph{Python, FastAPI, React, LLMs, Zabbix, OpenTelemetry, Ansible}}{}
+\begin{itemize}
+\resumeItem{Built \textbf{Unified Alerts API for centralized monitoring and real-time data aggregation} aggregating Zabbix and OpenTelemetry alerts}
+\resumeItem{Developed \textbf{LLM Remediation Engine} with real-time fix generation (<5s)}
+\resumeItem{Designed \textbf{Domain Health Scoring} and \textbf{Risk Prioritization Engine}}
+\resumeItem{Enabled deep observability with drill-down APIs improving MTTR}
+\end{itemize}
+
+\resumeProjectHeading{\textbf{SQL Optimizer Agent} $|$ \emph{Python, PostgreSQL, Agentic AI}}{}
+\begin{itemize}
+\resumeItem{Built \textbf{SQL optimization and query analysis engine for performance tuning and database analytics} detecting N+1 queries and bottlenecks}
+\resumeItem{Developed query rewriting using CTEs and optimized structures}
+\resumeItem{Performed data validation, query analysis, and performance monitoring on large datasets.}
+\resumeItem{Implemented \textbf{Semantic Validation} ensuring data consistency}
+\resumeItem{Integrated \texttt{EXPLAIN ANALYZE} for performance insights}
+\end{itemize}
+
+\resumeProjectHeading{\textbf{TaskHub} $|$ \emph{Python, FastAPI, React, Gemini}}{}
+\begin{itemize}
+\resumeItem{Built AI-based data ingestion and structured extraction pipeline}
+\resumeItem{Integrated \textbf{Gemini LLM} for parsing and workflow generation}
+\resumeItem{Designed scalable backend workflows for high-volume processing}
+\end{itemize}
+
+\usepackage{needspace}
+\resumeProjectHeading{\textbf{ResumeAI} $|$ \emph{Python, FastAPI, OpenAI-compatible LLMs}}{}
+\begin{itemize}
+\resumeItem{Developed \textbf{AI-powered resume analysis engine} comparing resumes with job descriptions}
+\resumeItem{Delivered scoring on skill alignment, experience, and role fit}
+\resumeItem{Generated insights with strengths, weaknesses, and improvements}
+\end{itemize}
+
+\resumeProjectHeading{\textbf{Auxhealium} $|$ \emph{Python, FastAPI, Ansible}}{}
+\begin{itemize}
+\resumeItem{Integrated \textbf{Ansible automation} and OTP validation workflows}
+\resumeItem{Built \textbf{WhatsApp integration} for alerts and execution triggers}
+\end{itemize}
+
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Thakur College of Commerce and Science}{Mumbai}
+{Master's in Information Technology -- CGPA: 9.2}{2023}
+\end{itemize}
+
+\end{document}

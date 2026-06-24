@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-neutral-300 bg-neutral-950 overflow-x-hidden selection:bg-primary-500/30 selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-neutral-100;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-800 rounded-full hover:bg-neutral-700 transition-colors;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-5xl font-extrabold tracking-tight mb-4 bg-gradient-to-r from-white via-neutral-100 to-neutral-400 bg-clip-text text-transparent;
+  }
+  
+  .section-subtitle {
+    @apply text-base md:text-lg text-neutral-400 mb-16 max-w-2xl mx-auto font-light;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center cursor-pointer;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-600 to-accent-600 text-white hover:from-primary-500 hover:to-accent-500 shadow-lg shadow-primary-950/40 hover:shadow-primary-500/20 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  
+  .btn-outline {
+    @apply border border-neutral-700 text-neutral-300 hover:border-neutral-500 hover:text-white hover:bg-neutral-900/50;
+  }
+  
+  .glass-card {
+    @apply bg-neutral-900/40 backdrop-blur-xl border border-neutral-800/60 rounded-2xl p-6 md:p-8 transition-all duration-300;
+  }
+
+  .glass-card-hover {
+    @apply hover:border-primary-500/30 hover:bg-neutral-900/60 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply text-neutral-400 hover:text-white transition-colors duration-300 text-sm font-medium relative py-1;
+  }
+  
+  .nav-link.active {
+    @apply text-primary-400;
+  }
+
+  .nav-link.active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full;
+  }
+  
+  /* Gradient text utility */
+  .text-glow-gradient {
+    @apply bg-gradient-to-r from-primary-400 via-accent-400 to-emerald-400 bg-clip-text text-transparent;
+  }
+}
+
+/* Background Glowing Nodes */
+.glow-spot {
+  @apply absolute rounded-full blur-[120px] pointer-events-none opacity-30 mix-blend-screen;
+}
+
+.glow-spot-primary {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+}
+
+.glow-spot-accent {
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.3) 0%, transparent 70%);
+}
+
+.glow-spot-emerald {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, transparent 70%);
+}
+
+/* Tech badge styling */
+.tech-badge {
+  @apply px-3 py-1 text-xs font-semibold rounded-full border border-neutral-800 bg-neutral-900 text-neutral-300 transition-colors hover:border-neutral-700 hover:text-white;
+}
